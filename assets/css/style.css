@@ -1,0 +1,185 @@
+body {
+  background-color: rgba(230, 239, 255, 0.7);
+}
+
+#preloader {
+  background: white url('../img/preloader.gif') no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  background-size: 20%;
+  position: fixed;
+}
+
+.loader-animation {
+  animation: vanish 3.8s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* main {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+} */
+
+section {
+  height: 100vh;
+  /* scroll-snap-align: start; */
+}
+
+#nilou-home {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(52, 79, 128, 0.7)), url('../img/nilou-bg.jpg');
+  background-size: cover;
+
+  /* BG 2 */
+  /* background-position: 1px; */
+}
+
+#nilou-intro {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(52, 79, 128, 0.7)),
+    url('../img/intro-bg.jpg');
+  background-size: cover;
+}
+
+#nilou-banner {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(52, 79, 128, 0.7)),
+    url('../img/nilou-bg-2.jpg');
+  background-size: cover;
+  background-position: 1px;
+}
+
+#nilou-artworks {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(52, 79, 128, 0.7)),
+    url('../img/scara.PNG');
+  background-size: cover;
+}
+
+.home-top .official-site {
+  margin: 0 30px;
+}
+
+.home-top .official-site img {
+  width: 130px;
+}
+
+.home-mid {
+  font-family: HYWenHei-85W;
+  color: white;
+  height: 78vh;
+}
+
+.home-mid>* {
+  margin: 0;
+  cursor: default;
+}
+
+.home-mid h1 {
+  font-size: 90px;
+  font-weight: 800;
+}
+
+.home-mid p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: -15px;
+}
+
+.home-bot img {
+  width: 140px;
+}
+
+.carousel {
+  width: 550px;
+  box-shadow: 0 0 15px rgb(210, 204, 168);
+}
+
+.arrow {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  margin: 0 10px;
+  opacity: .8;
+  transition: .2s;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+/* .banner img:nth-child(1),
+.banner img:nth-child(3) {
+  width: 45px;
+  margin: 0 10px;
+  cursor: pointer;
+} */
+
+.nilou-main {
+  animation: nilou-main 1.7s ease infinite alternate;
+}
+
+@keyframes nilou-main {
+  0% {
+    transform: translateY(-13px);
+  }
+
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+.intro {
+  color: white;
+}
+
+.intro h2 {
+  color: rgb(232, 199, 127);
+  font-family: HYWenHei-85W;
+  font-size: 35px;
+}
+
+.intro h3 {
+  font-family: HYWenHei-85W;
+  font-size: 23px;
+  color: rgb(238, 211, 144);
+  font-weight: 700;
+}
+
+.intro article {
+  font-size: 20px;
+}
+
+.intro img {
+  width: 350px;
+}
+
+.logo-banner img {
+  width: 300px;
+}
+
+.carousel-inner img {
+  width: 50px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  /* display: none; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, rgba(52, 79, 128, 0.7));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(230, 239, 255, 0.7);
+  /* background: white; */
+}
+
+/* //scrollbar */

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nilou | Genshin Impact</title>
+  <link rel="shortcut icon" href="assets/img/nilou-favicon.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="preloader"></div>
+
+  <main>
+    <section id="nilou-home">
+      <div class="home-top d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/img/genshin-logo.png" alt="genshin logo">
+          </a>
+        </div>
+        <div class="official-site">
+          <a href="">
+            <img src="assets/img/official-site.png" alt="official sit">
+          </a>
+        </div>
+      </div>
+      <div class="home-mid d-flex justify-content-center align-items-center flex-column">
+        <h1>Nilou</h1>
+        <p>Dance of Lotuslight</p>
+      </div>
+      <div class="home-bot text-white d-flex justify-content-center">
+        <img src="assets/img/hoyoverse.png" alt="hoyoverse">
+      </div>
+    </section>
+
+    <section id="nilou-intro" class="d-flex align-items-center">
+      <div class="container intro">
+        <h2 class="text-center mt-5">New Character</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
+            <h3>Nilou - Dance of Lotuslight</h3>
+            <article>
+              A dancer under the Zubayr Theater, Nilou's dancing is but elegant and graceful. However, outside the
+              stage's spotlight, she's just like any girl her age; warm, smiling, and friendly.
+            </article>
+          </div>
+          <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
+            <img class="nilou-main" src="assets/img/Nilou.png" alt="Nilou">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nilou-banner">
+      <div class="logo-banner d-flex justify-content-center align-content-center" data-aos="fade-in"
+        data-aos-once="true" data-aos-duration="2000">
+        <img src="assets/img/home-text.png" alt="three-magi">
+      </div>
+
+      <div class="banner d-flex justify-content-center align-items-center">
+        <img class="arrow" src="assets/img/arrow-left.png" data-bs-target="#caraousel-banner" data-bs-slide="prev">
+        <div id="caraousel-banner" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up"
+          data-aos-once="true" data-aos-duration="2000">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="assets/img/nilou-banner.jpg" class="d-block w-100" alt="nilou-banner">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/cyno-banner.jpg" class="d-block w-100" alt="cyno-banner">
+            </div>
+            <div class="carousel-item active">
+              <img src="assets/img/collei-banner.jpg" class="d-block w-100" alt="collei-banner">
+            </div>
+          </div>
+        </div>
+        <img class="arrow" src="assets/img/arrow-right.png" data-bs-target="#caraousel-banner" data-bs-slide="next">
+      </div>
+    </section>
+
+    <section id="nilou-artworks">
+      <div class="coming-soon d-flex justify-content-center align-items-center" style="height: 100vh; font-size: 45px;">
+        <p class="text-white">Coming Soon...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init()
+
+    const preloader = document.getElementById('preloader')
+    window.addEventListener('load', () => {
+      preloader.classList.add('loader-animation')
+    })
+  </script>
+</body>
+
+</html>
